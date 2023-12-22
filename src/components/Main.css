@@ -1,0 +1,59 @@
+.content {
+  display: flex;
+  height: auto;
+  left: 0;
+  position: absolute;
+  right: 0;
+  z-index: 900;
+  gap: 32px;
+  flex-direction: column;
+  bottom: 10%;
+}
+
+p {
+  color: var(--White, #fff);
+  /* font-family: Space Grotesk;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 22px;  */
+}
+h1 {
+  color: var(--White, #fff) !important;
+  font-family: Space Grotesk;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 540;
+  line-height: 60px; /* 75% */
+  letter-spacing: 1.6px;
+}
+.tz-arrow-down-right {
+  background-image: url(https://test.biletzero.com/images/icons/union.svg);
+  width: 14px;
+  height: 14px;
+  margin-left: 10px;
+}
+.buy-ticket {
+  color: #dbfc00;
+  font-size: 20px;
+  font-family: Cairo;
+  font-weight: 640;
+  line-height: 28px;
+  letter-spacing: 0.4px;
+  word-wrap: break-word;
+}
+.content a {
+  display: flex;
+  height: 56px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 59px;
+  border: 2px solid var(--sec, #dbfc00);
+  text-decoration: none;
+  width: 30%;
+  cursor: pointer;
+}
+span {
+  margin-right: 5px;
+}
