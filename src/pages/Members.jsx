@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import Footer from "../components/Footer";
 import { NavLink } from "react-bootstrap";
@@ -6,8 +6,19 @@ import "./Members.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
 import { FcGoogle } from "react-icons/fc";
+import { useNavigate } from "react-router-dom";
+import { MainContext } from "../MainContext";
+
 
 function Members() {
+  const {  setUser} = useContext(MainContext) 
+  const navigate = useNavigate()
+  const handleLogin = () => {
+    const user = {id: 1, name:"testuye"}
+    setUser(user)
+    localStorage.setItem("user", JSON.stringify(user))
+    navigate("/")
+   }
   return (
     <div className="membersbilet">
       <Container>
@@ -44,8 +55,8 @@ function Members() {
                 <Form.Group className="mb-3" controlId="formBasicCheckbox">
                   <Form.Check type="checkbox" label="Check me out" />
                 </Form.Group>
-                <Button variant="primary" type="submit">
-                  Submit
+                <Button onClick={handleLogin} variant="primary" type="submit">
+                  Giris Yap
                 </Button>
               </Form>
             </div>

@@ -14,7 +14,7 @@
   color: #fff;
   background-color: #1e1e1e !important;
 }
-button {
+.nav-item button {
   background-color: #1e1e1e !important;
   color: gray !important;
   border: 0;

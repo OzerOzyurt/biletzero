@@ -5,10 +5,10 @@ import { NavLink } from "react-bootstrap";
 import "./Members.css";
 import Button from "react-bootstrap/Button";
 import Form from "react-bootstrap/Form";
-import InputGroup from "react-bootstrap/InputGroup";
 
 function Singup() {
   const [validated, setValidated] = useState(false);
+  
 
   const handleSubmit = (event) => {
     const form = event.currentTarget;
@@ -19,6 +19,7 @@ function Singup() {
 
     setValidated(true);
   };
+   
   return (
     <div className="membersbilet">
       <Container>
@@ -93,7 +94,7 @@ function Singup() {
                     feedbackType="invalid"
                   />
                 </Form.Group>
-                <Button type="submit">Submit form</Button>
+                <Button  type="submit">Submit form</Button>
               </Form>
             </div>
           </Col>

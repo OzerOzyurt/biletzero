@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 // import Nav from "react-bootstrap/Nav";
 // import Navbar from "react-bootstrap/Navbar";
 // import NavDropdown from "react-bootstrap/NavDropdown";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import "./Navbar.css";
-import { NavLink } from "react-bootstrap";
+import { NavLink } from "react-router-dom";
+import { MainContext } from "../MainContext";
+import Dropdown from "react-bootstrap/Dropdown";
 
 function Navbarbilet() {
+  const { user, handleLogout } = useContext(MainContext);
+  console.log(user);
   return (
     <div className="headertop">
       <nav className="navbar">
@@ -19,20 +23,31 @@ function Navbarbilet() {
               className=""
             />
           </NavLink>
-          <div className="canvas-auth">
-            <NavLink className="login" href="/members">
-              Giriş Yap
-              {/* <i className="tz-down-right-arrow-purple"></i> */}
-            </NavLink>
-            <div className="desktop-split"></div>
-            <a
-              className="login"
-              href="/singup"
-            >
-              Üye Ol
-              {/* <i className="tz-down-right-arrow-purple"></i> */}
-            </a>
-          </div>
+
+          {user ? (
+            <Dropdown > 
+              <Dropdown.Toggle  variant="" id="dropdown-basic">
+               <span style={{color:"white"}} > Hoşgeldin {user.name} </span> 
+              </Dropdown.Toggle>
+
+              <Dropdown.Menu>
+                <Dropdown.Item href="/">Siparişlerim</Dropdown.Item>
+                <Dropdown.Item href="/">Hesabım</Dropdown.Item>
+                <Dropdown.Item href="/">Ayarlarım</Dropdown.Item>
+                <Dropdown.Item onClick={handleLogout}>Çıkış Yap</Dropdown.Item>
+              </Dropdown.Menu>
+            </Dropdown>
+          ) : (
+            <div className="canvas-auth">
+              <NavLink className="login" to="/members">
+                Giriş Yap
+              </NavLink>
+              <div className="desktop-split"></div>
+              <a className="login" to="/singup">
+                Üye Ol
+              </a>
+            </div>
+          )}
         </Container>
       </nav>
     </div>
