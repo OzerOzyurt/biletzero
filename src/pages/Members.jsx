@@ -26,8 +26,8 @@ function Members() {
           <Col sm={6}>
             <div>
               <div className="members1">
-                <NavLink href="/members">Giriş yap</NavLink>
-                <NavLink href="/singup">Üye ol</NavLink>
+                <NavLink className="memberslogin" href="/members">Giriş yap</NavLink>
+                <NavLink className="memberslogin" href="/singup">Üye ol</NavLink>
               </div>
               <Form>
                 <Form.Group className="mb-3" controlId="formBasicEmail">

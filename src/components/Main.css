@@ -10,7 +10,7 @@
   bottom: 10%;
 }
 
-p {
+.event-date {
   color: var(--White, #fff);
   /* font-family: Space Grotesk;
   font-size: 20px;

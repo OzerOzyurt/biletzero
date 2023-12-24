@@ -27,7 +27,7 @@ function Section() {
                 className="mb-3"
               >
                 <Tab
-                  className="tablist"
+                  className="tablist tabwhite"
                   eventKey="home"
                   title="Yaklaşan Etkinlik"
                 >
@@ -37,7 +37,7 @@ function Section() {
                   <div className="biletsat">4</div>
                 </Tab>
                 <Tab
-                  className="tablist"
+                  className="tablist tabwhite"
                   eventKey="profile"
                   title="Geçmiş Etkinlik"
                 >

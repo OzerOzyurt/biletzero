@@ -14,7 +14,7 @@
   height: 800px;
   background-color: #2e1717;
 }
-.nav-link {
+.memberslogin {
   color: var(--bs-white) !important;
 }
 .members1 {
@@ -30,4 +30,5 @@
   width: 100%;
   justify-content: center;
   align-items: center;
+  color: white;
 }

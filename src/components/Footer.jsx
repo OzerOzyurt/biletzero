@@ -235,28 +235,16 @@ function Footer() {
                 <div className="offset-lg-2 col-lg-3">
                   <div className="footer2 fot1">
                     <p className="footer2-p1">KURUMSAL</p>
-                    <a
-                      className="footer2-p2"
-                      href="https://test.biletzero.com/corporate/about-us"
-                    >
+                    <a className="footer2-p2" href="/Hakkimizda">
                       HAKKIMIZDA
                     </a>
-                    <a
-                      className="footer2-p2"
-                      href="https://test.biletzero.com/corporate/user-agreement"
-                    >
+                    <a className="footer2-p2" href="/UyelikSözlesmesi">
                       ÜYELİK SÖZLEŞMESİ
                     </a>
-                    <a
-                      className="footer2-p2"
-                      href="https://test.biletzero.com/corporate/product-service"
-                    >
+                    <a className="footer2-p2" href="/UrunHizmet">
                       KULLANIM KOŞULLARI
                     </a>
-                    <a
-                      className="footer2-p2"
-                      href="https://test.biletzero.com/corporate/cookie-policy"
-                    >
+                    <a className="footer2-p2" href="/CerezPolitikasi">
                       ÇEREZ POLİTİKASI
                     </a>
                   </div>

@@ -1,0 +1,29 @@
+.sidebar {
+  list-style: none;
+  text-decoration: none;
+  color: #1e1e1e;  
+  width: 16.6875rem; 
+  padding: 1rem 2rem;
+  font-family: Cairo;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  
+}
+.sidebardiv .active {
+  font-weight: 800;
+  
+}
+.sidebardiv {
+    border-radius: 1px;
+    border: 1px solid var(--Gallery, #d0d1d3);
+    width: 18.1875rem;
+    height: 41.25rem;
+    margin: 2rem 4.6875rem 0 2rem;
+    padding: 1rem;
+}

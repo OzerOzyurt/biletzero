@@ -19,7 +19,7 @@ button {
   color: gray !important;
   border: 0;
 }
-.active {
+.nav-tabs .nav-link.active {
   color: #fff !important;
   border-color: #1e1e1e !important;
 }
@@ -42,4 +42,7 @@ button {
   display: flex;
   font-size: 2rem;
   justify-content: space-between;
+}
+.rightside p {
+  color: white;
 }

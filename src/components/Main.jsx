@@ -5,6 +5,7 @@ import { BsCalendar2Check } from "react-icons/bs";
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 import { GoArrowDownRight } from "react-icons/go";
 
+
 function Main() {
   return (
     <div className="mainbilet ">
@@ -32,7 +33,7 @@ function Main() {
             İzmir Arena
           </p>
         </div>
-        <a id="buy-ticket-btn">
+        <a id="buy-ticket-btn" onClick={() => window.scrollTo(650, 950)}>
           <span className="buy-ticket">BİLET AL</span>
           <span className="tz-arrow-down-right"></span>
         </a>
