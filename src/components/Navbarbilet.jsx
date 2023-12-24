@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useEffect } from "react";
 import Container from "react-bootstrap/Container";
 // import Nav from "react-bootstrap/Nav";
 // import Navbar from "react-bootstrap/Navbar";
@@ -10,8 +10,11 @@ import { MainContext } from "../MainContext";
 import Dropdown from "react-bootstrap/Dropdown";
 
 function Navbarbilet() {
-  const { user, handleLogout } = useContext(MainContext);
+  const { user, handleLogout, setUser } = useContext(MainContext);
   console.log(user);
+  useEffect(() => {
+    setUser(JSON.parse(localStorage.getItem("user")) ?? null);
+  }, []);
   return (
     <div className="headertop">
       <nav className="navbar">
@@ -25,9 +28,9 @@ function Navbarbilet() {
           </NavLink>
 
           {user ? (
-            <Dropdown > 
-              <Dropdown.Toggle  variant="" id="dropdown-basic">
-               <span style={{color:"white"}} > Hoşgeldin {user.name} </span> 
+            <Dropdown>
+              <Dropdown.Toggle variant="" id="dropdown-basic">
+                <span style={{ color: "white" }}> Hoşgeldin {user.name} </span>
               </Dropdown.Toggle>
 
               <Dropdown.Menu>
