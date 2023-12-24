@@ -10,10 +10,11 @@ import Carousel from "react-bootstrap/Carousel";
 import { BsInstagram } from "react-icons/bs";
 import { CiFacebook } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
+import { NavLink } from "react-router-dom";
 
 function Section() {
   const [key, setKey] = useState("home");
-  const [show, setshow] = useState(false);
+  const [show, setshow] = useState(true);
   return (
     <div className="sectionbilet">
       <Container>
@@ -31,7 +32,7 @@ function Section() {
                   eventKey="home"
                   title="Yaklaşan Etkinlik"
                 >
-                  <div className="biletsat">1</div>
+                  <div className="biletsat"><NavLink to={"/Yerizmirde"}>Bilet Satin Al</NavLink></div>
                   <div className="biletsat">2</div>
                   <div className="biletsat">3</div>
                   <div className="biletsat">4</div>
