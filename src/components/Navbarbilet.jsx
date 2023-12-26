@@ -1,4 +1,4 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import "./Navbar.css";
 import { NavLink } from "react-router-dom";
@@ -6,12 +6,10 @@ import { MainContext } from "../MainContext";
 import Dropdown from "react-bootstrap/Dropdown";
 
 function Navbarbilet() {
-  const { user, handleLogout, setUser } = useContext(MainContext);
+  const { user, handleLogout,  } = useContext(MainContext);
   console.log(user);
   
-  useEffect(() => {
-    setUser(JSON.parse(localStorage.getItem("user")) ?? null);
-  },[]);
+  
   return (
     <div className="headertop">
       <nav className="navbar">
@@ -33,7 +31,7 @@ function Navbarbilet() {
               <Dropdown.Menu>
                 <Dropdown.Item href="/Siparislerim">Siparişlerim</Dropdown.Item>
                 <Dropdown.Item href="/Hesabim">Hesabım</Dropdown.Item>
-                <Dropdown.Item href="/">Ayarlarım</Dropdown.Item>
+                <Dropdown.Item href="/Ayarlarim">Ayarlarım</Dropdown.Item>
                 <Dropdown.Item onClick={handleLogout}>Çıkış Yap</Dropdown.Item>
               </Dropdown.Menu>
             </Dropdown>

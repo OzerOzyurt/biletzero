@@ -1,9 +1,13 @@
-import { createContext, useState } from "react";
+import { createContext, useEffect, useState } from "react";
 
 const MainContext = createContext();
 
 function MainContextProvider({ children }) {
   const [user, setUser] = useState(null);
+
+  useEffect(() => {
+    setUser(JSON.parse(localStorage.getItem("user")) ?? null);
+  },[]);
 
   const handleLogout = () => {
     localStorage.removeItem("user");

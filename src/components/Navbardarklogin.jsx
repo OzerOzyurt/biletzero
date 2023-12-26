@@ -1,15 +1,13 @@
-import React, { useContext, useEffect } from "react";
+import React, { useContext } from "react";
 import Container from "react-bootstrap/Container";
 import "./Navbardark.css";
 import { NavLink } from "react-bootstrap";
 import { MainContext } from "../MainContext";
 
 function Navbardarklogin() {
-  const  { user, setUser } =useContext(MainContext)
+  const  { user } =useContext(MainContext)
   console.log(user)
-  useEffect(() => {
-    setUser(JSON.parse(localStorage.getItem("user")) ?? null);
-  },[]);
+ 
   return (
     <div className="headertop2">
       <nav className="navbar">

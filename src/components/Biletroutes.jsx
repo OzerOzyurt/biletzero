@@ -1,6 +1,5 @@
-import React from "react";
-import { Route, Routes } from "react-router-dom";
-
+import React  from "react";
+import {  Route, Routes } from "react-router-dom";
 import Members from "../pages/Members";
 import Home from "../pages/Home";
 import Singup from "../pages/Singup";
@@ -16,8 +15,16 @@ import Iletisim from "../pages/about/Iletisim";
 import Yerizmirde from "../pages/Satinal/Yerizmirde";
 import Siparisler from "../pages/profil/Siparisler";
 import Hesabim from "../pages/profil/Hesabim";
+import Ayarlarim from "../pages/profil/Ayarlarim";
 
-function Biletroutes() {
+// import Privateroute from "./Privateroute";
+// import { MainContext } from "../MainContext";
+
+
+
+function Biletroutes() {  
+ 
+  
   return (
     <div>
       <Routes>
@@ -36,6 +43,9 @@ function Biletroutes() {
         <Route path="/Yerizmirde" element={<Yerizmirde/>}/>
         <Route path="/Siparislerim" element={<Siparisler/>}/>
         <Route path="/Hesabim" element={<Hesabim/>}/>
+        <Route path="Ayarlarim" element={<Ayarlarim/>}/>
+        {/* <Route path="/Siparislerim" element={<Privateroute  > <Siparisler/> </Privateroute>}/>
+        <Route path="/Hesabim" element={<Privateroute  > <Hesabim/> </Privateroute>}/> */}
       </Routes>
     </div>
   );

@@ -1,0 +1,17 @@
+.ayar1 {
+  color: var(--White, #fff);
+  font-family: Cairo;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 640;
+  line-height: 26px;
+  letter-spacing: 0.36px;  
+}
+.ayar2 {
+  display: flex;
+  width: 100%;
+  border: 1px solid white;
+  margin-top: 2rem;
+  padding: 20px;
+  justify-content: space-between;
+}

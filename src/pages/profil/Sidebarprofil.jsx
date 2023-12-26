@@ -12,13 +12,13 @@ function Sidebar() {
             user ? <span style={{ color: "white" }}> Hoşgeldin {user.name} </span> : null
           } <BsBell /></span>
 
-      <NavLink className="sidebarprofil" to="/Siparislerim">Üyelik Sözleşmesi</NavLink>
+      <NavLink className="sidebarprofil" to="/Siparislerim">Siparişlerim</NavLink>
 
       <NavLink className="sidebarprofil" to="/Hesabim">
         Hesabım
       </NavLink>
 
-      <NavLink className="sidebarprofil" to="/">
+      <NavLink className="sidebarprofil" to="/Ayarlarim">
         Ayarlarım
       </NavLink>
 

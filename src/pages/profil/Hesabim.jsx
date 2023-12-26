@@ -78,13 +78,13 @@ function Hesabim() {
           </Accordion> */}
           <div className="accor1">
             <div
-              class="accordion accordion-flush"
+              className="accordion accordion-flush"
               id="accordionPanelsStayOpenExample"
             >
-              <div class="accordion-item accorit">
-                <h2 class="accordion-header">
+              <div className="accordion-item accorit">
+                <h2 className="accordion-header">
                   <button
-                    class="accordion-button accorbtn"
+                    className="accordion-button accorbtn"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseOne"
@@ -96,18 +96,18 @@ function Hesabim() {
                 </h2>
                 <div
                   id="collapseOne"
-                  class="accordion-collapse collapse show"
+                  className="accordion-collapse collapse show"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
+                  <div className="accordion-body">
                     <ul
-                      class="nav nav-pills mb-3"
+                      className="nav nav-pills mb-3"
                       id="pills-tab"
                       role="tablist"
                     >
-                      <li class="nav-item" role="presentation">
+                      <li className="nav-item" role="presentation">
                         <button
-                          class="nav-link active"
+                          className="nav-link active"
                           id="pills-home-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-home"
@@ -119,9 +119,9 @@ function Hesabim() {
                           Hesap Bilgilerim
                         </button>
                       </li>
-                      <li class="nav-item" role="presentation">
+                      <li className="nav-item" role="presentation">
                         <button
-                          class="nav-link"
+                          className="nav-link"
                           id="pills-profile-tab"
                           data-bs-toggle="pill"
                           data-bs-target="#pills-profile"
@@ -135,9 +135,9 @@ function Hesabim() {
                       </li>
                       
                     </ul>
-                    <div class="tab-content" id="pills-tabContent">
+                    <div className="tab-content" id="pills-tabContent">
                       <div
-                        class="tab-pane fade show active"
+                        className="tab-pane fade show active"
                         id="pills-home"
                         role="tabpanel"
                         aria-labelledby="pills-home-tab"
@@ -146,7 +146,7 @@ function Hesabim() {
                         ...
                       </div>
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-profile"
                         role="tabpanel"
                         aria-labelledby="pills-profile-tab"
@@ -155,7 +155,7 @@ function Hesabim() {
                         ...
                       </div>
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-contact"
                         role="tabpanel"
                         aria-labelledby="pills-contact-tab"
@@ -164,7 +164,7 @@ function Hesabim() {
                         ...
                       </div>
                       <div
-                        class="tab-pane fade"
+                        className="tab-pane fade"
                         id="pills-disabled"
                         role="tabpanel"
                         aria-labelledby="pills-disabled-tab"
@@ -176,10 +176,10 @@ function Hesabim() {
                   </div>
                 </div>
               </div>
-              <div class="accordion-item accorit">
-                <h2 class="accordion-header">
+              <div className="accordion-item accorit">
+                <h2 className="accordion-header">
                   <button
-                    class="accordion-button accorbtn collapsed"
+                    className="accordion-button accorbtn collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseTwo"
@@ -191,26 +191,19 @@ function Hesabim() {
                 </h2>
                 <div
                   id="collapseTwo"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <strong>This is the second item's accordion body.</strong>{" "}
-                    It is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                  <div className="accordion-body">
+                    <strong>Yakında</strong>{" "}
+                    
                   </div>
                 </div>
               </div>
-              <div class="accordion-item accorit">
-                <h2 class="accordion-header">
+              <div className="accordion-item accorit">
+                <h2 className="accordion-header">
                   <button
-                    class="accordion-button accorbtn collapsed"
+                    className="accordion-button accorbtn collapsed"
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target="#collapseThree"
@@ -222,19 +215,11 @@ function Hesabim() {
                 </h2>
                 <div
                   id="collapseThree"
-                  class="accordion-collapse collapse"
+                  className="accordion-collapse collapse"
                   data-bs-parent="#accordionExample"
                 >
-                  <div class="accordion-body">
-                    <strong>This is the third item's accordion body.</strong> It
-                    is hidden by default, until the collapse plugin adds the
-                    appropriate classes that we use to style each element. These
-                    classes control the overall appearance, as well as the
-                    showing and hiding via CSS transitions. You can modify any
-                    of this with custom CSS or overriding our default variables.
-                    It's also worth noting that just about any HTML can go
-                    within the <code>.accordion-body</code>, though the
-                    transition does limit overflow.
+                  <div className="accordion-body">
+                    <strong>Yakında</strong> 
                   </div>
                 </div>
               </div>
