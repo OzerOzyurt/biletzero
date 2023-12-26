@@ -9,17 +9,17 @@
   height: auto;
   background: var(--Black, #1e1e1e);
 }
-.nav-tabs {
+.tabz {
   border: 0;
   color: #fff;
   background-color: #1e1e1e !important;
 }
-.nav-item button {
+.tabz .nav-item button {
   background-color: #1e1e1e !important;
   color: gray !important;
   border: 0;
 }
-.nav-tabs .nav-link.active {
+.tabz .nav-item  .nav-link.active {
   color: #fff !important;
   border-color: #1e1e1e !important;
 }
@@ -45,4 +45,7 @@
 }
 .rightside p {
   color: white;
-}
+  }
+  .rightside span {
+    cursor: pointer;;
+  }

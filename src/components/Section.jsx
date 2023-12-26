@@ -25,7 +25,7 @@ function Section() {
                 id="controlled-tab-example"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
-                className="mb-3"
+                className="mb-3 tabz"
               >
                 <Tab
                   className="tablist tabwhite"
@@ -80,9 +80,9 @@ function Section() {
                 </p>
               )}
 
-              <button onClick={() => setshow(!show)}>
+              <span onClick={() => setshow(!show)}>
                 {show ? <p>Daha Fazla</p> : <p>Daha Az</p>}
-              </button>
+              </span>
               <div className="icons">
                 <BsInstagram />
                 <CiFacebook />

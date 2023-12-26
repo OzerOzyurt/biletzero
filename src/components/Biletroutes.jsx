@@ -14,6 +14,8 @@ import CerezPolitikasi from "../pages/about/CerezPolitikasi";
 import UyelikIslem from "../pages/about/Uyelikİslem";
 import Iletisim from "../pages/about/Iletisim";
 import Yerizmirde from "../pages/Satinal/Yerizmirde";
+import Siparisler from "../pages/profil/Siparisler";
+import Hesabim from "../pages/profil/Hesabim";
 
 function Biletroutes() {
   return (
@@ -32,6 +34,8 @@ function Biletroutes() {
         <Route path="/UyelikIslem" element={<UyelikIslem />} />
         <Route path="/Iletisim" element={<Iletisim />} />
         <Route path="/Yerizmirde" element={<Yerizmirde/>}/>
+        <Route path="/Siparislerim" element={<Siparisler/>}/>
+        <Route path="/Hesabim" element={<Hesabim/>}/>
       </Routes>
     </div>
   );

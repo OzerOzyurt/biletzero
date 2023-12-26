@@ -1,0 +1,31 @@
+.sidebarprofil {
+  list-style: none;
+  text-decoration: none;
+  color: white;
+  width: 16.6875rem;
+  padding: 1rem 2rem;
+  font-family: Cairo;
+  font-size: 1.125rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.625rem;
+  letter-spacing: 0.36px;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.sidebardivprofil .active {
+  font-weight: 800;
+  color: #9747ff;
+}
+
+.sbprofildiv {
+  background-color: #1e1e1e;
+  border: 1px solid var(--Gallery, #d0d1d3);
+  width: 300px;
+  margin: 3rem 0  ;
+}
+.sdhos {
+  border-bottom: 1px solid var(--Gallery, #d0d1d3);
+  width: 100%;
+}
