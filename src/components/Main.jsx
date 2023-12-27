@@ -1,16 +1,19 @@
 import React from "react";
 import "./Main.css";
-import "bootstrap/dist/css/bootstrap.min.css";
 import { BsCalendar2Check } from "react-icons/bs";
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 import { GoArrowDownRight } from "react-icons/go";
+import { Link } from "react-scroll";
 
 
 function Main() {
   return (
     <div className="mainbilet ">
       <div className="container content">
-        <h1>
+        <p className="mainh1" style={{ color: "red" }}>
+          Not: bu resim değişmiş
+        </p>
+        <h1 className="mainh1">
           PERDENİN ARDINDAKİLER <GoArrowDownRight />
         </h1>
         <div className="event-info">
@@ -33,10 +36,10 @@ function Main() {
             İzmir Arena
           </p>
         </div>
-        <a id="buy-ticket-btn" onClick={() => window.scrollTo(650, 950)}>
+        <Link to="git" className="mainp" id="buy-ticket-btn">
           <span className="buy-ticket">BİLET AL</span>
           <span className="tz-arrow-down-right"></span>
-        </a>
+        </Link>
       </div>
     </div>
   );

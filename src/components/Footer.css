@@ -16,7 +16,8 @@
 .footer1 {
   width: 36.5625rem;
   height: 18.5rem;
-  margin: 3rem auto 7.0625rem 9.25rem;
+  /* margin: 3rem auto 7.0625rem 1.25rem; */
+  margin: auto 0;
   display: inline-flex;
   flex-direction: column;
   align-items: flex-start;
@@ -58,7 +59,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 1.2rem;
-  margin: 11.8125rem 0 auto 0;
+  /* margin: 11.8125rem 0 auto 0; */
 }
 
 .footer2-p1 {
@@ -70,6 +71,7 @@
   line-height: 1.75rem;
   letter-spacing: 0.2px;
   margin: 0;
+  text-decoration: none;
 }
 .footer2-p2 {
   color: #999;
@@ -80,6 +82,7 @@
   line-height: 1.375rem;
   letter-spacing: 0.32px;
   margin: 0;
+  text-decoration: none;
 }
 
 .fot2 {

@@ -4,6 +4,7 @@ const MainContext = createContext();
 
 function MainContextProvider({ children }) {
   const [user, setUser] = useState(null);
+  
 
   useEffect(() => {
     setUser(JSON.parse(localStorage.getItem("user")) ?? null);
@@ -18,6 +19,7 @@ function MainContextProvider({ children }) {
     user,
     setUser,
     handleLogout,
+    
   };
   return <MainContext.Provider value={data}>{children}</MainContext.Provider>;
 }

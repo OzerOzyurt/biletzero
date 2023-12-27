@@ -1,6 +1,6 @@
 import React from "react";
-import "bootstrap/dist/css/bootstrap.min.css";
 import "./Footer.css";
+import { NavLink } from "react-router-dom";
 
 function Footer() {
   return (
@@ -25,30 +25,30 @@ function Footer() {
           <div className="frame-2">
             <div className="text-wrapper-2">KURUMSAL</div>
             <div className="group-2">
-              <a
+              <NavLink
                 className="text-wrapper-3"
                 href="https://test.biletzero.com/corporate/about-us"
               >
                 HAKKIMIZDA
-              </a>
-              <a
+              </NavLink>
+              <NavLink
                 className="text-wrapper-3"
                 href="https://test.biletzero.com/corporate/user-agreement"
               >
                 ÜYELİK SÖZLEŞMESİ
-              </a>
-              <a
+              </NavLink>
+              <NavLink
                 className="text-wrapper-3"
                 href="https://test.biletzero.com/corporate/product-service"
               >
                 KULLANIM KOŞULLARI
-              </a>
-              <a
+              </NavLink>
+              <NavLink
                 className="text-wrapper-3"
                 href="https://test.biletzero.com/corporate/cookie-policy"
               >
                 ÇEREZ POLİTİKASI
-              </a>
+              </NavLink>
             </div>
           </div>
           <div className="frame-4">
@@ -74,7 +74,7 @@ function Footer() {
               <div className="row">
                 <div className="col-lg-4">
                   <div className="footer1">
-                    <div className="footer1-a">
+                    <div className="footer1-NavLink">
                       <svg
                         width="11.8125rem"
                         height="5.375rem"
@@ -235,28 +235,28 @@ function Footer() {
                 <div className="offset-lg-2 col-lg-3">
                   <div className="footer2 fot1">
                     <p className="footer2-p1">KURUMSAL</p>
-                    <a className="footer2-p2" href="/Hakkimizda">
+                    <NavLink className="footer2-p2" to="/Hakkimizda">
                       HAKKIMIZDA
-                    </a>
-                    <a className="footer2-p2" href="/UyelikSözlesmesi">
+                    </NavLink>
+                    <NavLink className="footer2-p2" to="/UyelikSözlesmesi">
                       ÜYELİK SÖZLEŞMESİ
-                    </a>
-                    <a className="footer2-p2" href="/UrunHizmet">
+                    </NavLink>
+                    <NavLink className="footer2-p2" to="/UrunHizmet">
                       KULLANIM KOŞULLARI
-                    </a>
-                    <a className="footer2-p2" href="/CerezPolitikasi">
+                    </NavLink>
+                    <NavLink className="footer2-p2" to="/CerezPolitikasi">
                       ÇEREZ POLİTİKASI
-                    </a>
+                    </NavLink>
                   </div>
                 </div>
                 <div className="col-lg-3">
                   <div className="footer2 fot2">
-                    <a
+                    <NavLink
                       className="footer2-p1"
-                      href="https://test.biletzero.com/corporate/contact"
+                      to="/Iletisim"
                     >
                       İLETİŞİM
-                    </a>
+                    </NavLink>
                     <p className="footer2-p2">info@biletzero.com</p>
                   </div>
                 </div>

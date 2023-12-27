@@ -14,7 +14,7 @@ function Navbarbilet() {
     <div className="headertop">
       <nav className="navbar">
         <Container className="h-auto">
-          <NavLink href="/" className="navbar-brand">
+          <NavLink to="/" className="navbar-brand">
             <img
               src="https://cdn.biletzero.com/images/57303453_409556369841369_3735883590534168576_n-removebg-preview_50-2_50.png"
               alt="logo"

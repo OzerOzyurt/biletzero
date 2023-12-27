@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { forwardRef, useContext, useState } from "react";
 // import "bootstrap/dist/css/bootstrap.min.css";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
@@ -11,21 +11,25 @@ import { BsInstagram } from "react-icons/bs";
 import { CiFacebook } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
+import { FaFacebookF } from "react-icons/fa";
+import { MainContext } from "../MainContext";
+
 
 function Section() {
   const [key, setKey] = useState("home");
   const [show, setshow] = useState(true);
+  const {secgit} = useContext(MainContext)
   return (
-    <div className="sectionbilet">
+    <div className="sectionbilet " id="git" secgit={secgit} >      
       <Container>
         <Row>
-          <Col sm={8}>
+          <Col sm={7}>
             <div>
               <Tabs
                 id="controlled-tab-example"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
-                className="mb-3 tabz"
+                className="mb-3 tabz border-0"
               >
                 <Tab
                   className="tablist tabwhite"
@@ -51,9 +55,9 @@ function Section() {
               </Tabs>
             </div>
           </Col>
-          <Col sm={4}>
+          <Col sm={5}>
             <div className="rightside">
-              <h1>Biz Kimiz?</h1>
+              <h4 className="sech4">Biz Kimiz?</h4>
               {show ? (
                 <p>
                   Perdenin Ardındakiler Doruk Ereşter ve Direnç Kaçmaz'ın
@@ -85,51 +89,53 @@ function Section() {
               </span>
               <div className="icons">
                 <BsInstagram />
+                <FaFacebookF/>
                 <CiFacebook />
                 <BsTwitterX />
               </div>
+              <h4 className="sech4-2">Konserlerimizden Kesitler</h4>
 
               <div>
                 <Carousel data-bs-theme="white">
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-100 carimg"
                       src="https://test.biletzero.com/images/static/g1.jpeg"
                       alt="First slide"
                     />
                     <Carousel.Caption>
-                      <h5>First slide label</h5>
+                      {/* <h5>First slide label</h5>
                       <p>
                         Nulla vitae elit libero, a pharetra augue mollis
                         interdum.
-                      </p>
+                      </p> */}
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-100 carimg"
                       src="https://test.biletzero.com/images/static/g2.jpeg"
                       alt="Second slide"
                     />
                     <Carousel.Caption>
-                      <h5>Second slide label</h5>
+                      {/* <h5>Second slide label</h5>
                       <p>
                         Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                      </p>
+                      </p> */}
                     </Carousel.Caption>
                   </Carousel.Item>
                   <Carousel.Item>
                     <img
-                      className="d-block w-100"
+                      className="d-block w-100 carimg"
                       src="https://test.biletzero.com/images/static/g1.jpeg"
                       alt="Third slide"
                     />
                     <Carousel.Caption>
-                      <h5>Third slide label</h5>
+                      {/* <h5>Third slide label</h5>
                       <p>
                         Praesent commodo cursus magna, vel scelerisque nisl
                         consectetur.
-                      </p>
+                      </p> */}
                     </Carousel.Caption>
                   </Carousel.Item>
                 </Carousel>
@@ -151,4 +157,4 @@ function Section() {
   );
 }
 
-export default Section;
+export default forwardRef(Section);
