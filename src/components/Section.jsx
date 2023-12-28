@@ -1,5 +1,4 @@
-import React, { forwardRef, useContext, useState } from "react";
-// import "bootstrap/dist/css/bootstrap.min.css";
+import React, { forwardRef, useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Container from "react-bootstrap/Container";
@@ -12,51 +11,384 @@ import { CiFacebook } from "react-icons/ci";
 import { BsTwitterX } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
-import { MainContext } from "../MainContext";
+import { FaSlidersH } from "react-icons/fa";
 
+import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 
 function Section() {
   const [key, setKey] = useState("home");
   const [show, setshow] = useState(true);
-  const {secgit} = useContext(MainContext)
+
   return (
-    <div className="sectionbilet " id="git" secgit={secgit} >      
-      <Container>
+    <div className="sectionbilet " id="git">
+      <Container className="secdiv">
+      <p className="secspan">
+        {" "}
+        <FaSlidersH
+          size={"1rem"}
+          style={{ transform: "rotate(90deg)", marginBottom: "5px" }}
+        />{" "}
+        Filtreler
+      </p>
         <Row>
           <Col sm={7}>
-            <div>
+            <div className="">
               <Tabs
                 id="controlled-tab-example"
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
                 className="mb-3 tabz border-0"
               >
+                
                 <Tab
                   className="tablist tabwhite"
                   eventKey="home"
                   title="Yaklaşan Etkinlik"
                 >
-                  <div className="biletsat"><NavLink to={"/Yerizmirde"}>Bilet Satin Al</NavLink></div>
-                  <div className="biletsat">2</div>
-                  <div className="biletsat">3</div>
-                  <div className="biletsat">4</div>
+                  <div className="biletsat">
+                    <div className="biletsat2"></div>
+                    <div className="biletsat3">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                        <span className="biletciftk">
+                          Çift kişilik bilet avantajlarıyla
+                        </span>
+                      </div>
+                    </div>
+                    <div className="biletsat4">
+                      <p className="biletsat4-1">₺500</p>
+                      <p className="biletsat4-2">Başlayan fiyatlarla</p>
+                      <button className="biletsat4-3">
+                        <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
+                          Bilet Al
+                        </NavLink>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="biletsat">
+                    <div className="biletsat2"></div>
+                    <div className="biletsat3">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                        <span className="biletciftk">
+                          Çift kişilik bilet avantajlarıyla
+                        </span>
+                      </div>
+                    </div>
+                    <div className="biletsat4">
+                      <p className="biletsat4-1">₺500</p>
+                      <p className="biletsat4-2">Başlayan fiyatlarla</p>
+                      <button className="biletsat4-3">
+                        <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
+                          Bilet Al
+                        </NavLink>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="biletsat">
+                    <div className="biletsat2"></div>
+                    <div className="biletsat3">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                        <span className="biletciftk">
+                          Çift kişilik bilet avantajlarıyla
+                        </span>
+                      </div>
+                    </div>
+                    <div className="biletsat4">
+                      <p className="biletsat4-1">₺500</p>
+                      <p className="biletsat4-2">Başlayan fiyatlarla</p>
+                      <button className="biletsat4-3">
+                        <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
+                          Bilet Al
+                        </NavLink>
+                      </button>
+                    </div>
+                  </div>
+                  <div className="biletsat">
+                    <div className="biletsat2"></div>
+                    <div className="biletsat3">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                        <span className="biletciftk">
+                          Çift kişilik bilet avantajlarıyla
+                        </span>
+                      </div>
+                    </div>
+                    <div className="biletsat4b">
+                      <p className="biletsat4-1">₺500</p>
+                      <p className="biletsat4-2">Başlayan fiyatlarla</p>
+                      <p className="biletsat4-3b">
+                        <span className="biletsat4-4b">TÜKENDİ</span>
+                      </p>
+                    </div>
+                  </div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal">
+                      <p className="biletsat4-ipt">İPTAL EDİLDİ</p>
+                    </div>
+                  </div>
+                  <div className="biletsat">
+                    <div className="biletsat2"></div>
+                    <div className="biletsat3">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                        <span className="biletciftk">
+                          Çift kişilik bilet avantajlarıyla
+                        </span>
+                      </div>
+                    </div>
+                    <div className="biletsat4">
+                      <p className="biletsat4-1">₺500</p>
+                      <p className="biletsat4-2">Başlayan fiyatlarla</p>
+                      <button className="biletsat4-3">
+                        <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
+                          Bilet Al
+                        </NavLink>
+                      </button>
+                    </div>
+                  </div>
                 </Tab>
                 <Tab
                   className="tablist tabwhite"
                   eventKey="profile"
                   title="Geçmiş Etkinlik"
                 >
-                  <div className="biletsat">5</div>
-                  <div className="biletsat">6</div>
-                  <div className="biletsat">7</div>
-                  <div className="biletsat">8</div>
-                  <div className="biletsat">9</div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal"></div>
+                  </div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal"></div>
+                  </div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal"></div>
+                  </div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal"></div>
+                  </div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal"></div>
+                  </div>
+                  <div className="biletsatiptal">
+                    <div className="biletsat2-b"></div>
+                    <div className="biletsat3-b">
+                      <div className="d-flex flex-column">
+                        <div className="biletsat-a1">
+                          <div className="biletsataygün">
+                            <p className="biletsatay">EKİ</p>
+                            <p className="biletsatgün">06</p>
+                          </div>
+                          <div>
+                            <p className="biletsatyer2">
+                              {" "}
+                              <IoLocationOutline /> Holly Stone, DENİZLİ
+                            </p>
+                            <p className="biletsatsaat2">
+                              <IoTimeOutline /> 21:45{" "}
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="biletsat4-iptal"></div>
+                  </div>
                 </Tab>
               </Tabs>
             </div>
           </Col>
           <Col sm={5}>
             <div className="rightside">
+              
               <h4 className="sech4">Biz Kimiz?</h4>
               {show ? (
                 <p>
@@ -89,7 +421,7 @@ function Section() {
               </span>
               <div className="icons">
                 <BsInstagram />
-                <FaFacebookF/>
+                <FaFacebookF />
                 <CiFacebook />
                 <BsTwitterX />
               </div>

@@ -69,12 +69,12 @@ function Footer() {
           className="d-none d-lg-flex"
           style={{ flexdirection: "column" }}
         >
-          <div className="footer">
-            <div className="container">
-              <div className="row">
+          <div className="footer foot1">
+            <div className="container foot2">
+              <div className="row ">
                 <div className="col-lg-4">
                   <div className="footer1">
-                    <div className="footer1-NavLink">
+                    <div className="footer1-2">
                       <svg
                         width="11.8125rem"
                         height="5.375rem"

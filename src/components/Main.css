@@ -35,6 +35,12 @@
   font-weight: 540;
   line-height: 60px;
   letter-spacing: 1.6px;
+  margin: 0;
+  /* display: flex; */
+  padding: 0;
+}
+.mainsvg {
+  margin-left: 24px;
 }
 .tz-arrow-down-right {
   background-image: url(https://test.biletzero.com/images/icons/union.svg);
@@ -63,6 +69,6 @@
   width: 30%;
   cursor: pointer;
 }
-span {
+.mainspan {
   margin-right: 5px;
 }
