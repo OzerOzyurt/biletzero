@@ -18,11 +18,15 @@ import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 function Section() {
   const [key, setKey] = useState("home");
   const [show, setshow] = useState(true);
+  const [filt, setfilt] = useState(true);
+  
+
+    
 
   return (
     <div className="sectionbilet " id="git">
       <Container className="secdiv">
-      <p className="secspan">
+      <p className={filt ? "secspan" : "secspan2" }>
         {" "}
         <FaSlidersH
           size={"1rem"}
@@ -38,12 +42,14 @@ function Section() {
                 activeKey={key}
                 onSelect={(k) => setKey(k)}
                 className="mb-3 tabz border-0"
+                onClick={()=>setfilt(!filt)}                
               >
                 
                 <Tab
                   className="tablist tabwhite"
                   eventKey="home"
                   title="Yaklaşan Etkinlik"
+                  onSelect={()=>setfilt(true)}
                 >
                   <div className="biletsat">
                     <div className="biletsat2"></div>
@@ -243,6 +249,7 @@ function Section() {
                   className="tablist tabwhite"
                   eventKey="profile"
                   title="Geçmiş Etkinlik"
+                  onClick={()=>setfilt(false)}
                 >
                   <div className="biletsatiptal">
                     <div className="biletsat2-b"></div>
