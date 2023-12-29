@@ -8,8 +8,8 @@ function Home() {
   return <div>
     <Navbarbilet/>
     <Main/>
-    <Section/>
-    <Footer/>
+    {/* <Section/>
+    <Footer/> */}
   </div>;
 }
 
