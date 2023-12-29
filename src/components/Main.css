@@ -72,3 +72,56 @@
 .mainspan {
   margin-right: 5px;
 }
+
+@media screen and (min-width:1029px) {
+  .mainbiletmobil {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 279px) and (max-width: 1028px) {
+  .mainbilet {
+    display: none;
+  }
+  .mainbiletmobil {
+    background-image: url(https://cdn.biletzero.com/images/5bf2ekrb.ksmpa-desktop.jpeg);
+    top: 0;
+    z-index: 1;
+    width: 100%;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+  }
+  .contentmobil {
+    display: flex;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    z-index: 900;
+    flex-direction: column;
+    bottom: 10%;
+  }
+  .mainpmobil {
+    display: flex;
+    height: 56px;
+    padding: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 59px;
+    border: 2px solid var(--sec, #dbfc00);
+    text-decoration: none;
+    width: 100%;
+    cursor: pointer;
+    margin-top: 38px;
+  }
+  .event-datemobil {
+    color: #fff;
+    margin-bottom: 4px;
+  }
+  .mainsvgmobil {
+    margin-left: 10px;
+  }
+}
