@@ -482,15 +482,17 @@ function Section() {
               </div>
             </Col>
           </Row>
+          <div className="ifra">
           <iframe
-            width="560"
-            height="315"
+            width="100%"
+            height="566"
             src="https://www.youtube.com/embed/GWBJAk0GNic?si=r-yYi1o_as9CJw7U"
             title="YouTube video player"
             frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
+          </div>
         </Container>
       </div>
       <div className="sectionbiletmobil" id="git">
@@ -953,6 +955,7 @@ function Section() {
               </div>
             </Col>
           </Row>
+          <div className="iframobil">
           <iframe
             width="100%"
             height="415"
@@ -962,6 +965,7 @@ function Section() {
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
             allowFullScreen
           ></iframe>
+          </div>
         </Container>
       </div>
     </>

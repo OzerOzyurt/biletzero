@@ -254,7 +254,7 @@
   border: 1px solid var(--Mine-Shaft, #515151);
   padding: 40px;
   width: 464px;
-  margin-left: 122px;
+  margin-left: auto;
 }
 .icons {
   color: white;
@@ -277,7 +277,7 @@
 .secspan {
   position: absolute;
   left: 49%;
-  top: 4%;
+  top: 3.3%;
   color: var(--Gallery, #d0d1d3);
   font-family: Cairo;
   font-size: 20px;
@@ -291,7 +291,7 @@
 .secspan2 {
   position: absolute;
   left: 49%;
-  top: 4.4%;
+  top: 3.5%;
   color: var(--Gallery, #d0d1d3);
   font-family: Cairo;
   font-size: 20px;
@@ -331,6 +331,10 @@
   font-weight: 640;
   line-height: 34px;
   letter-spacing: 0.48px;
+}
+.ifra {
+  background: var(--Black, #1e1e1e);
+  padding: 100px 0 60px;
 }
 @media screen and (min-width: 1029px) {
   .sectionbiletmobil {
@@ -438,5 +442,8 @@
     letter-spacing: 0.4px;
     margin: 0;
     padding: 0;
+  }
+  .iframobil {
+    padding-bottom: 5rem ;
   }
 }
