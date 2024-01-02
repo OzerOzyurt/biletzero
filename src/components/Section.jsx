@@ -495,7 +495,7 @@ function Section() {
           </div>
         </Container>
       </div>
-      <div className="sectionbiletmobil" id="git">
+      <div className="sectionbiletmobil" id="gitt">
         <Container className="secdiv">
           <p className={filt ? "secspanmobil" : "secspan2mobil"}>
             {" "}
@@ -521,32 +521,32 @@ function Section() {
                     title="Yaklaşan Etkinlik"
                     onSelect={() => setfilt(true)}
                   >
-                    <div className="d-none d-lg-block">
-                      <div className="biletsat">
-                        <div className="biletsat2"></div>
-                        <div className="biletsat3">
+                    <div className=" ">
+                      <div className="biletsat d-flex flex-column">
+                        <div className="biletsat2 d-none"></div>
+                        <div className="biletsat3mobil">
                           <div className="d-flex flex-column">
-                            <div className="biletsat-a1">
-                              <div className="biletsataygün">
-                                <p className="biletsatay">EKİ</p>
-                                <p className="biletsatgün">06</p>
+                            <div className="biletsat-a1mobil">
+                              <div className="biletsataygünmobil">
+                                <p className="biletsataymobil">EKİ</p>
+                                <p className="biletsatgünmobil">06</p>
                               </div>
                               <div>
-                                <p className="biletsatyer">
+                                <p className="biletsatyermobil">
                                   {" "}
                                   <IoLocationOutline /> Holly Stone, DENİZLİ
                                 </p>
-                                <p className="biletsatsaat">
+                                <p className="biletsatsaatmobil">
                                   <IoTimeOutline /> 21:45{" "}
                                 </p>
                               </div>
                             </div>
-                            <span className="biletciftk">
+                            <span className="biletciftkmobil">
                               Çift kişilik bilet avantajlarıyla
                             </span>
                           </div>
                         </div>
-                        <div className="biletsat4">
+                        <div className="biletsat4 d-none ">
                           <p className="biletsat4-1">₺500</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <button className="biletsat4-3">
@@ -556,7 +556,7 @@ function Section() {
                           </button>
                         </div>
                       </div>
-                      <div className="biletsat">
+                      {/* <div className="biletsat">
                         <div className="biletsat2"></div>
                         <div className="biletsat3">
                           <div className="d-flex flex-column">
@@ -714,7 +714,7 @@ function Section() {
                             </NavLink>
                           </button>
                         </div>
-                      </div>
+                      </div> */}
                     </div>
                   </Tab>
                   <Tab

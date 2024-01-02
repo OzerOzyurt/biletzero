@@ -412,7 +412,7 @@ function Footer() {
           </div>
         </footer>
         <div className="footer3mobil">
-          <p className="footer3-a1">© 2023 BİLETZERO TÜM HAKLARI SAKLIDIR.</p>
+          <p className="footer3-a1mobil">© 2023 BİLETZERO TÜM HAKLARI SAKLIDIR.</p>
         </div>
       </div>
     </>

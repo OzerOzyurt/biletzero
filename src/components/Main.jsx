@@ -120,7 +120,7 @@ function Main() {
             </p>
           </div>
           <Link
-            to="git"
+            to="gitt"
             spy={true}
             // smooth={true}
             hashSpy={true}
