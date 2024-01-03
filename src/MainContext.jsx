@@ -1,9 +1,10 @@
 import { createContext, useEffect, useState } from "react";
+import Privateroute from "./components/Privateroute";
 
 const MainContext = createContext();
 
 function MainContextProvider({ children }) {
-  const [user, setUser] = useState(null);
+  const [user, setUser] = useState({id: 1, name:"testuye"});
   
 
   useEffect(() => {
@@ -18,10 +19,17 @@ function MainContextProvider({ children }) {
   const data = {
     user,
     setUser,
-    handleLogout,
+    handleLogout,    
     
   };
-  return <MainContext.Provider value={data}>{children}</MainContext.Provider>;
+
+  
+
+  return <MainContext.Provider value={data}>{children}
+  </MainContext.Provider>;
 }
 
+<MainContextProvider>
+<Privateroute/>
+</MainContextProvider>
 export { MainContext, MainContextProvider };

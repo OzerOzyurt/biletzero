@@ -141,7 +141,7 @@ function Hesabim() {
                         id="pills-home"
                         role="tabpanel"
                         aria-labelledby="pills-home-tab"
-                        tabindex="0"
+                        tabIndex="0"
                       >
                         ...
                       </div>
@@ -150,7 +150,7 @@ function Hesabim() {
                         id="pills-profile"
                         role="tabpanel"
                         aria-labelledby="pills-profile-tab"
-                        tabindex="0"
+                        tabIndex="0"
                       >
                         ...
                       </div>
@@ -159,7 +159,7 @@ function Hesabim() {
                         id="pills-contact"
                         role="tabpanel"
                         aria-labelledby="pills-contact-tab"
-                        tabindex="0"
+                        tabIndex="0"
                       >
                         ...
                       </div>
@@ -168,7 +168,7 @@ function Hesabim() {
                         id="pills-disabled"
                         role="tabpanel"
                         aria-labelledby="pills-disabled-tab"
-                        tabindex="0"
+                        tabIndex="0"
                       >
                         ...
                       </div>

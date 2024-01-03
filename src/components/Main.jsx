@@ -27,8 +27,8 @@ function Main() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M47.2224 51.6867L0 4.46421L4.46421 0L51.6866 47.2224L51.6867 2.23211H58L58 58L2.23211 58V51.6866L47.2224 51.6867Z"
                     fill="white"
                   />
@@ -90,8 +90,8 @@ function Main() {
                   xmlns="http://www.w3.org/2000/svg"
                 >
                   <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
+                    fillRule="evenodd"
+                    clipRule="evenodd"
                     d="M22.797 24.9522L0 2.15514L2.15514 0L24.9522 22.797L24.9522 1.07757H28L28 28L1.07757 28V24.9522L22.797 24.9522Z"
                     fill="white"
                   />

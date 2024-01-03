@@ -12,7 +12,6 @@ import { BsTwitterX } from "react-icons/bs";
 import { NavLink } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSlidersH } from "react-icons/fa";
-
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 
 function Section() {
