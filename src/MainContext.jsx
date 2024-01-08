@@ -15,11 +15,14 @@ function MainContextProvider({ children }) {
     localStorage.removeItem("user");
     setUser(null);
   };
+  const [bileta,setBileta] =useState(200)
 
   const data = {
     user,
     setUser,
-    handleLogout,    
+    handleLogout,
+    bileta,
+    setBileta,   
     
   };
 

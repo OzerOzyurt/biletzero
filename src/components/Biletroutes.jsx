@@ -17,8 +17,8 @@ import Siparisler from "../pages/profil/Siparisler";
 import Hesabim from "../pages/profil/Hesabim";
 import Ayarlarim from "../pages/profil/Ayarlarim";
 import Section from "./Section";
-
 import Privateroute from "./Privateroute";
+import Odeme from "../pages/Satinal/Odeme";
 // import { MainContext } from "../MainContext";
 
 
@@ -42,6 +42,7 @@ function Biletroutes() {
         <Route path="/UyelikIslem" element={<UyelikIslem />} />
         <Route path="/Iletisim" element={<Iletisim />} />
         <Route path="/Yerizmirde" element={<Yerizmirde/>}/>
+        <Route path="/Odeme" element={<Odeme/>}/>
         {/* <Route path="/Siparislerim" element={<Siparisler/>}/>
         <Route path="/Hesabim" element={<Hesabim/>}/> */}
         <Route path="Ayarlarim" element={<Ayarlarim/>}/>

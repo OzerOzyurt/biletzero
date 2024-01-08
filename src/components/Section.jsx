@@ -1,4 +1,4 @@
-import React, { forwardRef, useState } from "react";
+import React, { forwardRef, useContext, useState } from "react";
 import Tab from "react-bootstrap/Tab";
 import Tabs from "react-bootstrap/Tabs";
 import Container from "react-bootstrap/Container";
@@ -13,8 +13,10 @@ import { NavLink } from "react-router-dom";
 import { FaFacebookF } from "react-icons/fa";
 import { FaSlidersH } from "react-icons/fa";
 import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
+import { MainContext } from "../MainContext";
 
 function Section() {
+  const {bileta} = useContext (MainContext)
   const [key, setKey] = useState("home");
   const [show, setshow] = useState(true);
   const [filt, setfilt] = useState(true);
@@ -73,7 +75,7 @@ function Section() {
                           </div>
                         </div>
                         <div className="biletsat4">
-                          <p className="biletsat4-1">₺500</p>
+                          <p className="biletsat4-1">₺{bileta}</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <button className="biletsat4-3">
                             <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
@@ -107,7 +109,7 @@ function Section() {
                           </div>
                         </div>
                         <div className="biletsat4">
-                          <p className="biletsat4-1">₺500</p>
+                          <p className="biletsat4-1">₺{bileta}</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <button className="biletsat4-3">
                             <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
@@ -141,7 +143,7 @@ function Section() {
                           </div>
                         </div>
                         <div className="biletsat4">
-                          <p className="biletsat4-1">₺500</p>
+                          <p className="biletsat4-1">₺{bileta}</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <button className="biletsat4-3">
                             <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
@@ -175,7 +177,7 @@ function Section() {
                           </div>
                         </div>
                         <div className="biletsat4b">
-                          <p className="biletsat4-1">₺500</p>
+                          <p className="biletsat4-1">₺{bileta}</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <p className="biletsat4-3b">
                             <span className="biletsat4-4b">TÜKENDİ</span>
@@ -232,7 +234,7 @@ function Section() {
                           </div>
                         </div>
                         <div className="biletsat4">
-                          <p className="biletsat4-1">₺500</p>
+                          <p className="biletsat4-1">₺{bileta}</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <button className="biletsat4-3">
                             <NavLink className="biletsat4-4" to={"/Yerizmirde"}>

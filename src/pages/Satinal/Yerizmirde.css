@@ -4,3 +4,16 @@ background-color: #1e1e1e;
 .usttaraf p, h5 {
     color: white;
 }
+
+.yerizmirde1{
+    border: 1px solid #1e1e1e;
+    padding: 10px 20px;
+}
+.yerizmirde2{
+    margin-left: auto;
+}
+.yerizmirtop {
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+}
