@@ -6,7 +6,7 @@ import { MainContext } from "../MainContext";
 
 function Navbardarklogin() {
   const  { user } =useContext(MainContext)
-  console.log(user)
+  // console.log(user)
  
   return (
     <div className="headertop2">

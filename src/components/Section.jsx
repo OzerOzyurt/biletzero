@@ -16,7 +16,7 @@ import { IoTimeOutline, IoLocationOutline } from "react-icons/io5";
 import { MainContext } from "../MainContext";
 
 function Section() {
-  const {bileta} = useContext (MainContext)
+  const { bileta } = useContext(MainContext);
   const [key, setKey] = useState("home");
   const [show, setshow] = useState(true);
   const [filt, setfilt] = useState(true);
@@ -78,9 +78,15 @@ function Section() {
                           <p className="biletsat4-1">₺{bileta}</p>
                           <p className="biletsat4-2">Başlayan fiyatlarla</p>
                           <button className="biletsat4-3">
-                            <NavLink className="biletsat4-4" to={"/Yerizmirde"}>
-                              Bilet Al
-                            </NavLink>
+                            
+                              
+                              <NavLink
+                                className="biletsat4-4"
+                                to={"/Yerizmirde"}
+                              >
+                                Bilet Al
+                              </NavLink>
+                            
                           </button>
                         </div>
                       </div>
@@ -484,15 +490,15 @@ function Section() {
             </Col>
           </Row>
           <div className="ifra">
-          <iframe
-            width="100%"
-            height="566"
-            src="https://www.youtube.com/embed/GWBJAk0GNic?si=r-yYi1o_as9CJw7U"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+            <iframe
+              width="100%"
+              height="566"
+              src="https://www.youtube.com/embed/GWBJAk0GNic?si=r-yYi1o_as9CJw7U"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </Container>
       </div>
@@ -504,7 +510,6 @@ function Section() {
               size={"1rem"}
               style={{ transform: "rotate(90deg)", marginBottom: "5px" }}
             />{" "}
-            
           </p>
           <Row className="mb-5">
             <Col xl={7}>
@@ -957,15 +962,15 @@ function Section() {
             </Col>
           </Row>
           <div className="iframobil">
-          <iframe
-            width="100%"
-            height="415"
-            src="https://www.youtube.com/embed/GWBJAk0GNic?si=r-yYi1o_as9CJw7U"
-            title="YouTube video player"
-            frameBorder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowFullScreen
-          ></iframe>
+            <iframe
+              width="100%"
+              height="415"
+              src="https://www.youtube.com/embed/GWBJAk0GNic?si=r-yYi1o_as9CJw7U"
+              title="YouTube video player"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowFullScreen
+            ></iframe>
           </div>
         </Container>
       </div>

@@ -1,0 +1,17 @@
+.odeme1 {
+  background: var(--BG-Color, #f8f6f7);
+}
+.odemeonay {
+  display: flex;
+  width: 316px;
+  height: 70px;
+  padding: 24px;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  border-radius: 100px;
+  background: var(
+    --gradient,
+    linear-gradient(99deg, #9747ff 27.6%, #6d2cc2 82.24%)
+  );
+}

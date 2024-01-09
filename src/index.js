@@ -6,14 +6,17 @@ import "bootstrap/dist/css/bootstrap.min.css";
 import { BrowserRouter } from "react-router-dom";
 import { MainContextProvider } from "./MainContext";
 // import reportWebVitals from './reportWebVitals';
-import "bootstrap/dist/js/bootstrap.bundle"
+import "bootstrap/dist/js/bootstrap.bundle";
+import { OdemeContextProvider } from "./pages/Satinal/OdemeContext";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
     <BrowserRouter>
       <MainContextProvider>
-        <App />
+        <OdemeContextProvider>
+          <App />
+        </OdemeContextProvider>
       </MainContextProvider>
     </BrowserRouter>
   </React.StrictMode>

@@ -1,0 +1,70 @@
+.yerüst {
+    background-color: #1e1e1e;
+  }
+  .yerüst2 {
+    margin-top: auto;
+  }
+  .yerüst3 {
+    color: var(--White, #fff);
+    font-family: Space Grotesk;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 440;
+    line-height: 40.5px;
+    letter-spacing: 0.6px;
+  }
+  .yerüst4 {
+    margin-top: auto;
+  }
+  .yerüst4-1 {
+    color: #9747ff;
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 34px; /* 121.429% */
+    letter-spacing: 4.48px;
+    margin: 0;
+  }
+  .yerüst4-2 {
+    color: var(--Light-Violet, #9747ff);
+    text-align: center;
+    font-family: Space Grotesk;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 56px;
+    letter-spacing: 0.88px;
+    margin-bottom: 5px;
+  }
+  .yerüst5{
+      margin-top: auto;
+      margin-left: 15px;
+  }
+  .yerüst5-1 {
+    color: var(--Gallery, #d0d1d3);
+    font-family: Cairo;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px;
+    letter-spacing: 0.36px;
+  }
+  .yerüst5-2 {
+    color: #fff;
+    font-family: Cairo;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 640;
+    line-height: 28px;
+    letter-spacing: 0.4px;
+  }
+  .yerizmirdeust1 {
+    background-image: url("https://testcdn.biletzero.com/images/dy4hrfib.4kdPerdenin-Ardindakiler-Gonlume-Hukmedemem-sarki-sozleri.jpg");
+    height: 222px;
+    background-size: cover;
+    background-position: left;
+    width: 33%;
+    margin: 12px;
+  }

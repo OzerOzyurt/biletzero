@@ -1,69 +1,65 @@
-import React, { useContext, useReducer } from "react";
+import React, { useContext } from "react";
 import Navbardark from "../../components/Navbardark";
 import Footer from "../../components/Footer";
 import "./Yerizmirde.css";
 import { MainContext } from "../../MainContext";
 import { NavLink } from "react-router-dom";
+import OdemeUst from "./OdemeUst";
+import { OdemeContext } from "./OdemeContext";
 
-export const artir = "artir";
-export const azalt = "azalt";
-// export function yerde () {
+// export const artir = "artir";
+// export const azalt = "azalt";
 
-export const reducer = (state, action) => {
-  console.log(state.data);
-  console.log(state.data2);
 
-  console.log(state);
-  console.log(action);
-  switch (action.type) {
-    case artir:
-      return {
-        data: state.data + 1,
-        data2: state.data2 + state.data3,
-        data3: state.data3,
-      };
+// export const reducer = (state, action) => {
+//   console.log(state.data);
+//   console.log(state.data2);
 
-    case azalt:
-      return state.data === 0
-        ? { data: state.data, data2: state.data2, data3: state.data3 }
-        : {
-            data: state.data - 1,
-            data2: state.data2 - state.data3,
-            data3: state.data3,
-          };
-    default:
-      return state;
-  }
-};
+//   console.log(state);
+//   console.log(action);
+//   switch (action.type) {
+//     case artir:
+//       return {
+//         data: state.data + 1,
+//         data2: state.data2 + state.data3,
+//         data3: state.data3,
+//       };
+
+//     case azalt:
+//       return state.data === 0
+//         ? { data: state.data, data2: state.data2, data3: state.data3 }
+//         : {
+//             data: state.data - 1,
+//             data2: state.data2 - state.data3,
+//             data3: state.data3,
+//           };
+//     default:
+//       return state;
+//   }
+// };
 
 // return {data:state.data === 0 ?  state.data : { data: state.data - 1}, data2:state.data2 === 0 ? state.data2 : {data2: state.data2 - state.data3}}
 
 function Yerizmirde() {
   const { bileta } = useContext(MainContext);
-  const initialValue = {
-    data: 0,
-    data2: 0,
-    data3: bileta,
-  };
-  const [count, dispatch] = useReducer(reducer, initialValue);
-  // console.log("data", data)
+  const {count, dispatch,artir,azalt} = useContext(OdemeContext)
+  // const initialValue = {
+  //   data: 0,
+  //   data2: 0,
+  //   data3: bileta,
+  // };
+  // const [count, dispatch] = useReducer(reducer, initialValue);
+  
 
   return (
     <div>
       <Navbardark />
-      <div>
+      <OdemeUst/>
+      <div id="biletsatinal">
+        
         <div className="container">
-          <div className="usttaraf">
-            <h5>Etkinlik Açıklaması</h5>
-            <p>
-              Yayınladıkları şarkılarla geniş kitlelere ulaşmayı başaran,
-              Alternatif Pop müziğinin güçlü ikilisi ‘Perdenin Ardındakiler’
-              yeni albümleri sonrasında gerçekleştirecekleri konser serisi ile
-              dinleyicileriyle buluşuyor.
-            </p>
-          </div>
-          <div className="d-flex">
-            <div className="col-6">
+          <div className="d-flex ">
+            <div className="col-6 yerizmiryüksek">
               <h3>Bilet Secimi</h3>
               <hr />
 
@@ -100,13 +96,13 @@ function Yerizmirde() {
                   Henüz Seçim Yapmadın
                 </h4>
                 <div className={count.data === 0 ? "d-none" : ""}>
-
-                <p>{count.data2}</p>
-                <div className="yerizmirtop">
-
-                <h6>Toplam Tutar:  </h6> <h4>₺ {count.data2} </h4>
-                </div>
-                <button><NavLink to={"/Odeme"}>ONAYLA</NavLink></button>
+                  <p>{count.data2}</p>
+                  <div className="yerizmirtop">
+                    <h6>Toplam Tutar: </h6> <h4>₺ {count.data2} </h4>
+                  </div>
+                  <button>
+                    <NavLink to={"/Odeme"}>ONAYLA</NavLink>
+                  </button>
                 </div>
               </div>
             </div>
