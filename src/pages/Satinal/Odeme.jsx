@@ -4,6 +4,7 @@ import Footer from "../../components/Footer";
 import OdemeUst from "./OdemeUst";
 import { OdemeContext } from "./OdemeContext";
 import "./Odeme.css";
+import axios from "axios";
 // import { Form } from "react-router-dom";
 
 function Odeme() {
@@ -12,28 +13,76 @@ function Odeme() {
   const bosform = {
     CVV: "",
     cardnumber: "",
-    email: "",
-    lastname: "",
+    Email: "",
+    Surname: "",
     lasttime: "",
-    name: "",
+    Name: "",
     namelastname: "",
-    phonenumber: "",
+    Phone: "",
   };
+
   const [priceInfo, setPriceInfo] = useState({});
   const [priceInfoStok, setPriceInfoStok] = useState([]);
+  // const [postData, setPostData] = useState({});
+
+  var timeZone = -(new Date().getTimezoneOffset() / 60);
+  // var binNumber = (priceInfo.cardnumber)
+  // var bimnum = binNumber.substring(0,6)
+  // console.log(bimnum)
+  
+{
+  // var bimnum = binNumber.substring(0,6)
+}
+
+  // var postData = {
+  //   Name: priceInfo.Name,
+  //   Surname: priceInfo.Surname,
+  //   Email: priceInfo.Email,
+  //   Phone: priceInfo.Phone,
+  //   BinNumber: priceInfo.cardnumber,
+  //   InstallmentCount: 1,
+  //   // CardId: "",
+  //   // PaymentReceiver: "",
+  //   additionalMethodId: 0,
+  //   timeZone: timeZone,
+  // };
 
   const handlePrice = (e) => {
     setPriceInfo((pri) => ({ ...pri, [e.target.name]: e.target.value }));
   };
 
   useEffect(() => {
-    console.log(priceInfo);
-    // console.log(priceInfoStok);
+    // console.log(priceInfo);
+    console.log(priceInfo.Name);
+
+
+
+
+    
   }, [priceInfo]);
-  const handlePriceSubmit = (e) => {
+  const handlePriceSubmit = async (e) => {
     e.preventDefault();
     setPriceInfoStok((priv) => [...priv, priceInfo]);
-    setPriceInfo(bosform)
+
+    var postData = {
+      Name: priceInfo.Name,
+      Surname: priceInfo.Surname,
+      Email: priceInfo.Email,
+      Phone: priceInfo.Phone,
+      BinNumber: priceInfo.cardnumber.substring(0,6),
+      InstallmentCount: 1,
+      // CardId: "",
+      // PaymentReceiver: "",
+      additionalMethodId: 0,
+      timeZone: timeZone,
+    };
+
+    try {
+      await axios.post("https://test.biletzero.com/CreateOrder", postData);
+      setPriceInfo(bosform);
+    } catch (error) {
+      return console.log(error)
+    }
   };
 
   return (
@@ -125,8 +174,8 @@ function Odeme() {
                 onChange={handlePrice}
                 className="w-100 mt-3 p-2"
                 type="text"
-                name="name"
-                value={priceInfo.name}
+                name="Name"
+                value={priceInfo.Name}
                 placeholder="Adınız"
                 required
               />
@@ -134,8 +183,8 @@ function Odeme() {
                 onChange={handlePrice}
                 className="w-100 mt-3 p-2"
                 type="text"
-                name="lastname"
-                value={priceInfo.lastname}
+                name="Surname"
+                value={priceInfo.Surname}
                 placeholder="Soyadınız"
                 required
               />
@@ -143,8 +192,8 @@ function Odeme() {
                 onChange={handlePrice}
                 className="w-100 mt-3 p-2"
                 type="email"
-                name="email"
-                value={priceInfo.email}
+                name="Email"
+                value={priceInfo.Email}
                 // pattern="email"
                 placeholder="E-Posta Adresiniz"
                 required
@@ -153,8 +202,8 @@ function Odeme() {
                 onChange={handlePrice}
                 className="w-100 mt-3 p-2"
                 type="tel"
-                name="phonenumber"
-                value={priceInfo.phonenumber}
+                name="Phone"
+                value={priceInfo.Phone}
                 placeholder="Telefon Numaranizi Yaziniz"
                 minLength={11}
                 maxLength={11}
